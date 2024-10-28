@@ -9,6 +9,20 @@ export default {
       info: null
     }
   },
+  computed: {
+    showTemp() {
+      return "Температура: " + this.info.main.temp
+    },
+    showFeelsLike() {
+      return "Ощущается как: " + this.info.main.feels_like
+    },
+    showMinTemp() {
+      return "Минимальная температура: " + this.info.main.temp_min
+    },
+    showMaxTemp() {
+      return "Максимальная температура: " + this.info.main.temp_max
+    },
+  },
   methods: {
     getWeather() {
       if(this.city.trim().length < 2) {
@@ -36,7 +50,13 @@ export default {
     <button disabled v-else>Введите название города</button>
     <p class="error">{{ error }}</p>
 
-    <p v-show="info != null">{{ info }}</p>
+    <div v-if="info != null">
+      <p>{{ showTemp }}</p>
+      <p>{{ showFeelsLike }}</p>
+      <p>{{ showMinTemp }}</p>
+      <p>{{ showMaxTemp }}</p>
+    </div>
+
   </div>
 </template>
 
