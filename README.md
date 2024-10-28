@@ -1,35 +1,12 @@
-# WeatherApp
+# WEATHERAPP
 
-This template should help get you started developing with Vue 3 in Vite.
+## Приложения для определения точного прогноза погоды во всех городах мира
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+Стек используемых технологий:
+```
+HTML, CSS, JS, VUE, AXIOS
 ```
 
-### Compile and Hot-Reload for Development
+Проект, написанный на Vue.js. Начал делать этот проект для разнообразия и набора опыта. В этом проекте используется API из сайта OpenWeatherMap.
 
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+> Проект дорабатывается
